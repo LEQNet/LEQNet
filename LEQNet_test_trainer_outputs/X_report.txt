@@ -1,0 +1,52 @@
+================== Overal Info ==============================
+date of report: 2021-11-01 10:55:03.205498
+input_hdf5: ../data/STEAD/merge_modified.hdf5
+input_csv: ../data/STEAD/mix_train_merge_modified.csv
+output_name: JS2_test_trainer_outputs
+================== Model Parameters =========================
+input_dimention: (6000, 3)
+cnn_blocks: 4
+lstm_blocks: 2
+padding_type: same
+activation_type: relu
+drop_rate: 0.1
+total params: 39,776
+trainable params: 39,328
+non-trainable params: 448
+================== Training Parameters ======================
+mode of training: generator
+loss_types: ['binary_crossentropy', 'binary_crossentropy', 'binary_crossentropy']
+loss_weights: [0.05, 0.4, 0.55]
+batch_size: 20
+epochs: 10
+train_valid_test_split: [0.8, 0.1, 0.1]
+total number of training: 80000
+total number of validation: 10000
+monitor: val_loss
+patience: 2
+multi_gpu: False
+number_of_gpus: 4
+gpuid: None
+gpu_limit: None
+use_multiprocessing: True
+================== Training Performance =====================
+finished the training in:  4 hours and 7 minutes and 48.98 seconds 
+stoped after epoche: 5
+last loss: 0.00563789219519
+last detector_loss: 0.0227389
+last picker_P_loss: 0.0045194
+last picker_S_loss: 0.00481057
+last detector_f1: 0.929062
+last picker_P_f1: 0.462723
+last picker_S_f1: 0.337911
+================== Other Parameters =========================
+label_type: gaussian
+augmentation: True
+shuffle: True
+normalization_mode: std
+add_event_r: 0.6
+add_noise_r: 0.3
+shift_event_r: 0.99
+drop_channel_r: 0.5
+scale_amplitude_r: None
+pre_emphasis: False
