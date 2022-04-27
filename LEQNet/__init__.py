@@ -4,15 +4,15 @@ import importlib
 import sys
 import warnings
 
-from LEQNet.core.trainer import trainer
-from LEQNet.core.tester import tester
-from LEQNet.core.predictor import predictor
-from LEQNet.core.mseed_predictor import mseed_predictor
-from LEQNet.core.LEQNet_utils import *
-from LEQNet.utils.associator import run_associator
-from LEQNet.utils.downloader import downloadMseeds, makeStationList, downloadSacs
-from LEQNet.utils.hdf5_maker import preprocessor
-from LEQNet.utils.plot import plot_detections, plot_data_chart
+from core.trainer import trainer
+from core.tester import tester
+from core.predictor import predictor
+from core.mseed_predictor import mseed_predictor
+from core.LEQNet_utils import *
+from utils.associator import run_associator
+from utils.downloader import downloadMseeds, makeStationList, downloadSacs
+from utils.hdf5_maker import preprocessor
+from utils.plot import plot_detections, plot_data_chart
 
 __all__ = ['core', 'utils', 'tests']
 __version__ = '0.0.1'
